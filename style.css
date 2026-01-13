@@ -1,0 +1,149 @@
+.dody {
+    font-family: work sans;
+}
+
+/* shared styles */
+.display-flex {
+    display: flex;
+
+}
+
+.text-gray {
+    color: #424242;
+}
+
+.text-light-gray,
+.first-h3 {
+    color: #757575;
+}
+
+/* header styles */
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
+
+/* navber releted styles */
+
+.navber {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: Work Sans;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 500px;
+}
+
+.navber,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Banner */
+
+.banner-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font: 700;
+    font-size: 4rem;
+    font-family: Work Sans;
+}
+
+.banner p {
+    color: #727272;
+    line-height: 1.5rem;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+/* Team and Feature */
+.team {
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features {
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+.features-title {
+    font-weight: 500;
+    font-size: 2.8rem;
+    font-family: work sans;
+    margin-bottom: 24px;
+}
+
+.second-h3 {
+    font-weight: 700;
+    color: #131313;
+}
+
+.third-h3 {
+    font-weight: 700;
+    color: #FF900E;
+}
+
+.features-description {
+    color: #727272;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 32px;
+
+}
+
+/* Responsive Media Query */
+
+@media screen and (max-width:576px) {
+
+    .navber,
+    .nav-link {
+        flex-direction: column;
+    }
+}
