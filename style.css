@@ -239,10 +239,17 @@ main>section {
 /* Responsive Media Query */
 
 @media screen and (max-width:576px) {
+    .feature-card-fact {
+        flex-direction: row;
+    }
+
+    .facts-container {
+             grid-template-columns: 1fr; 
+    }
 
     .navber,
     .same-facts,
-    .team {
+    .team,.feature-card-fact {
         flex-direction: column;
     }
 
@@ -261,9 +268,13 @@ main>section {
 /* Medium Device */
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    .team {
+    .team ,.sfeature-card-fact ,.same-facts {
         flex-direction: column;
     }
+
+    .facts-container {
+        grid-template-columns: 1fr 1fr; 
+}
 
     .our-features {
         margin-left: 50px;
