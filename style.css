@@ -43,6 +43,7 @@
 main {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 main>section {
@@ -76,6 +77,7 @@ main>section {
 .banner {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 /* Banner */
@@ -140,12 +142,29 @@ main>section {
 
 }
 
+/* facts */
+.facts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.facts-container .fact {
+    border: 1px solid #FF900E;
+    text-align: center;
+    align-items: center;
+    width: 241px;
+    height: 241px;
+    padding: 30px 0px 0px 0px;
+}
+
 /* Responsive Media Query */
 
 @media screen and (max-width:576px) {
 
     .navber,
-    .nav-link,
+    /* .nav-link, */
     .team {
         flex-direction: column;
     }
