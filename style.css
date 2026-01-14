@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* shared styles */
@@ -73,12 +72,11 @@ main>section {
 .brand {
     font-weight: 700;
     font-size: 3rem;
-    font-family: Work Sans;
 }
 
 .nav-item {
     list-style: none;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .nav-link {
@@ -163,10 +161,11 @@ main>section {
     margin-top: -100px;
 }
 
-#experience-year{
+#experience-year {
     font-size: 4rem;
     font-weight: 700;
 }
+
 /* same fact */
 
 .same-facts {
@@ -192,7 +191,7 @@ main>section {
 
 .feature-card .feature-title {
     font-weight: 600;
-    font-size: 1.25px; 
+    font-size: 1.25px;
 }
 
 /* facts */
@@ -235,31 +234,95 @@ main>section {
     line-height: 1.6;
 }
 
+/* Sponspors Section */
+
+.Sponspors-content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Sponspors-content h3 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.Sponspors-content p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.Sponspors-card-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 130px;
+}
+
+.Sponspors-card-section img {
+    width: 150px;
+    height: 40px;
+}
+
+/* Fotter */
+
+footer {
+    background-color: #FFF4E7;
+    width: 1440px;
+    height: 100px;
+    margin-bottom: 216px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer p {
+    padding: 39px 410px;
+    text-align: center;
+    color: #424242;
+}
 
 /* Responsive Media Query */
 
 @media screen and (max-width:576px) {
-    .feature-card-fact {
-        flex-direction: row;
+    .navber h3 {
+        font-size: 500;
+        align-items: center;
+        justify-content: center;
+        font-weight: 2.5rem;
     }
 
-    .facts-container {
-             grid-template-columns: 1fr; 
+    .facts-container,
+    .navber {
+        grid-template-columns: 1fr;
     }
 
     .navber,
     .same-facts,
-    .team,.feature-card-fact {
+    .team,
+    .feature-card-fact,
+    .Sponspors-card-section {
         flex-direction: column;
     }
 
-    .team-img-container {
+    .team-img-container,
+    .Sponspors-card-section {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .our-features {
         margin-left: 20px;
     }
+
+    .Sponspors-card-section img {
+        margin-left: 60px;
+    }
+
     .feature-arc img {
         width: 100%;
     }
@@ -268,13 +331,16 @@ main>section {
 /* Medium Device */
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    .team ,.sfeature-card-fact ,.same-facts {
+
+    .team,
+    .sfeature-card-fact,
+    .same-facts {
         flex-direction: column;
     }
 
     .facts-container {
-        grid-template-columns: 1fr 1fr; 
-}
+        grid-template-columns: 1fr 1fr;
+    }
 
     .our-features {
         margin-left: 50px;
